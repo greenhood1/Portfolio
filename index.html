@@ -26,3 +26,316 @@ button{font:inherit}
 @keyframes flow{to{background-position:250% 0}}
 .hub p{color:var(--muted);max-width:60ch}
 .btn,.sb{display:inline-block;padding:13px 22px;border:0;border-radius:12px;font-weight:800;text-decoration:none;cursor:pointer;background:var(--yellow);color:#1b1500}
+.btn.alt{background:transparent;color:var(--ink);border:2px solid var(--purple)}
+.btn.sm{padding:8px 14px;font-size:.88rem;border-radius:10px}
+.btn.red{background:#ff5d6c;color:#fff}
+.row{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;margin:18px 0 40px}
+.dc{display:block;text-decoration:none;background:var(--panel);border:1px solid var(--line);border-radius:18px;overflow:hidden}
+.dc:hover{border-color:var(--yellow)}
+.tile{height:130px;display:flex;align-items:center;justify-content:center;font-size:3.6rem}
+.dc div.t{padding:14px}
+.dc h3{margin:0 0 4px;font-size:1.05rem}
+.dc small{color:var(--muted)}
+.dc em{display:inline-block;margin-top:8px;font-style:normal;color:var(--cyan);font-weight:700;font-size:.9rem}
+.ft{padding:24px 0 10px;color:var(--muted);font-size:.9rem}
+/* demo site */
+#site{--c1:#6d28d9;--c2:#ec4899;background:#faf8ff;background:color-mix(in srgb,var(--c1) 7%,#fff);color:#1d1b3a;min-height:100vh}
+.sbar{position:sticky;top:0;z-index:20;display:flex;align-items:center;gap:10px;justify-content:space-between;padding:10px 16px;padding-top:calc(10px + env(safe-area-inset-top,0px));background:#fff;border-bottom:1px solid #e6e1f5;white-space:nowrap;overflow:hidden}
+.sbar strong{color:var(--c1);min-width:0;overflow:hidden;text-overflow:ellipsis}
+.sbar a{flex:none}
+.back,.sbtn{text-decoration:none;font-size:.88rem;font-weight:700;padding:7px 12px;border-radius:99px;border:1px solid #d9d2f5}
+.sbtn{background:var(--c1);color:#fff;border-color:var(--c1)}
+.shero{position:relative;background:linear-gradient(135deg,var(--c1),var(--c2));background-size:cover;background-position:center;color:#fff;padding:48px 0 56px}
+.shero .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.hin{max-width:540px}
+.shero p{font-size:1.1rem;opacity:.95}
+.hico{font-size:clamp(4rem,18vw,9rem);filter:drop-shadow(0 8px 20px rgba(0,0,0,.3))}
+.sb{background:#ffe01b}
+.sb.alt{background:rgba(255,255,255,.2);color:#fff;border:2px solid #fff}
+.sec{padding:44px 0 4px}
+.sec h2{color:var(--c1)}
+.gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px;margin-top:14px}
+.g{position:relative;aspect-ratio:1;border-radius:16px;overflow:hidden;display:flex;align-items:center;justify-content:center;font-size:3.4rem;border:0;padding:0;color:#fff}
+.g img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.g span{position:absolute;left:0;right:0;bottom:0;padding:18px 10px 8px;font-size:.88rem;font-weight:700;background:linear-gradient(transparent,rgba(0,0,0,.65));text-align:left}
+.item{display:flex;align-items:center;gap:12px;background:#fff;border:1px solid #e6e1f5;border-radius:16px;padding:14px;margin-top:10px}
+.item div.i{flex:1}
+.item b{display:block}
+.item small{color:#6b7190}
+.pr{font-weight:800;color:var(--c1);white-space:nowrap}
+.step{display:flex;align-items:center;gap:8px}
+.step button{width:34px;height:34px;border-radius:50%;border:1px solid var(--c1);background:#fff;color:var(--c1);font-size:1.2rem;cursor:pointer;line-height:1}
+.step button:last-child{background:var(--c1);color:#fff}
+.step b{min-width:18px;text-align:center}
+.pan{background:#fff;border:1px solid #e6e1f5;border-radius:18px;padding:18px;margin-top:12px}
+.pan label{display:block;font-weight:700;font-size:.88rem;margin:12px 0 4px}
+.pan input,.pan textarea{width:100%;padding:12px;border-radius:10px;border:1px solid #d9d2f5;font:inherit;color:#1d1b3a;background:#fff}
+.tot{font-size:1.5rem;font-weight:800;color:var(--c1)}
+.sum{white-space:pre-line;color:#4a4a6a;margin:6px 0}
+.wb{background:#25d366;color:#fff;border:0;border-radius:12px;padding:14px 22px;font-weight:800;cursor:pointer;margin-top:12px;width:100%;font-size:1rem}
+.rev{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin-top:12px}
+.rev div{background:#fff;border:1px solid #e6e1f5;border-radius:16px;padding:16px}
+.rev small{color:#6b7190}
+.pill{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(76px + env(safe-area-inset-bottom,0px));z-index:25;background:var(--c1,#6d28d9);color:#fff;border:0;border-radius:99px;padding:12px 22px;font-weight:800;box-shadow:0 6px 24px rgba(0,0,0,.35);cursor:pointer}
+.ban{margin:44px 0 20px;background:#1d1b3a;color:#fff;border-radius:18px;padding:20px}
+.ban p{color:#c9c4ee}
+.note{font-size:.82rem;color:#6b7190}
+#lb{position:fixed;inset:0;z-index:50;background:rgba(5,8,20,.96);display:flex;align-items:center;justify-content:center;padding:16px;cursor:zoom-out}
+#lb img{max-width:100%;max-height:100%}
+footer{position:fixed;left:0;right:0;bottom:0;padding-bottom:env(safe-area-inset-bottom,0px);background:linear-gradient(90deg,#2a1070,#6d28d9,#2a1070);border-top:1px solid var(--yellow);overflow:hidden;white-space:nowrap;z-index:30}
+.mq{display:inline-block;padding:16px 0;font-weight:800;letter-spacing:.04em;color:var(--yellow);text-shadow:0 0 12px rgba(255,224,27,.6);animation:scroll 16s linear infinite}
+footer:hover .mq{animation-play-state:paused}
+@keyframes scroll{from{transform:translateX(100vw)}to{transform:translateX(-100%)}}
+/* admin */
+#admin{position:fixed;inset:0;z-index:60;background:var(--bg);color:var(--ink);overflow:auto;padding:16px;padding-top:calc(16px + env(safe-area-inset-top,0px));padding-bottom:50px}
+.adm{max-width:640px;margin:0 auto}
+.adm h3{margin:24px 0 6px}
+.adm label{display:block;font-weight:600;font-size:.86rem;margin:10px 0 4px}
+.adm input,.adm textarea,.adm select{width:100%;padding:11px;border-radius:10px;border:1px solid var(--line);background:#0d1330;color:var(--ink);font:inherit}
+.box{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:12px;margin-top:10px}
+.box img{width:100%;max-height:180px;object-fit:contain;border-radius:8px;background:#0d1330;display:block;margin-bottom:8px}
+.tip{background:rgba(255,224,27,.1);border:1px dashed var(--yellow);border-radius:12px;padding:12px;font-size:.9rem;margin-top:12px}
+#st{min-height:1.4em;color:var(--cyan);font-size:.9rem;margin-top:10px}
+:is(.btn,.sb,button,a,input,select,textarea):focus-visible{outline:3px solid var(--cyan);outline-offset:2px}
+@media (prefers-reduced-motion:reduce){.mq{animation:none;display:block;text-align:center}.hub h1{animation:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div id="hub"></div>
+<div id="site" hidden></div>
+<button class="pill" id="pill" type="button" hidden></button>
+<div id="lb" hidden><img alt="Enlarged"></div>
+<div id="admin" hidden><div class="adm" id="admBody"></div></div>
+<footer><div class="mq" id="mq">Ebene-Vento Technology</div></footer>
+<script id="site-data" type="application/json">{"updated": 0, "password": "ebene2026", "owner": {"name": "Engr Ebenezer Bassey", "whatsapp": "2347066949022", "email": "greenhopecover@gmail.com"}, "niches": [{"id": "restaurant", "label": "Restaurant", "icon": "🍛", "c1": "#e11d48", "c2": "#f59e0b", "name": "Mama's Kitchen", "head": "Fresh meals, hot and fast.", "tag": "Home-cooked Nigerian food. Order online or walk in.", "cta": "Order Now", "gname": "Our food", "mname": "Menu", "list": "Your order", "ph": "Delivery address or table number", "about": "We cook every meal fresh, with local ingredients and the taste of home. Party trays and daily delivery available.", "hours": "Open daily 9am to 10pm. Your street, your city.", "phone": "2347066949022", "hero": "", "gal": [{"e": "🍛", "l": "Jollof rice", "img": ""}, {"e": "🍗", "l": "Grilled chicken", "img": ""}, {"e": "🍲", "l": "Pepper soup", "img": ""}, {"e": "🥘", "l": "Egusi and pounded yam", "img": ""}, {"e": "🍹", "l": "Fresh drinks", "img": ""}, {"e": "🍰", "l": "Desserts", "img": ""}], "items": [{"n": "Jollof Rice and Chicken", "d": "Party-style jollof with grilled chicken", "p": 3500}, {"n": "Pounded Yam and Egusi", "d": "With fish or assorted meat", "p": 4000}, {"n": "Pepper Soup", "d": "Goat meat or catfish", "p": 2500}, {"n": "Fried Rice and Turkey", "d": "With coleslaw and plantain", "p": 4500}, {"n": "Chapman", "d": "Chilled, 50cl", "p": 1500}, {"n": "Puff Puff", "d": "Pack of 10", "p": 1000}], "rev": [{"t": "The jollof is the best in town and delivery was fast.", "w": "Amaka"}, {"t": "Perfect party trays. Everyone asked who cooked.", "w": "Tunde"}]}, {"id": "salon", "label": "Salon", "icon": "💇‍♀️", "c1": "#6d28d9", "c2": "#ec4899", "name": "Glow Salon", "head": "Look great. Feel amazing.", "tag": "Hair, nails, makeup, and spa. Book your slot in seconds.", "cta": "Book Now", "gname": "Our work", "mname": "Services and prices", "list": "Your booking", "ph": "Preferred day and time", "about": "Our stylists have years of experience with braids, wigs, nails, and skin care. Walk in or book ahead.", "hours": "Mon to Sat 8am to 8pm. Your street, your city.", "phone": "2347066949022", "hero": "", "gal": [{"e": "💇‍♀️", "l": "Braids", "img": ""}, {"e": "💅", "l": "Nails", "img": ""}, {"e": "✂️", "l": "Haircuts", "img": ""}, {"e": "💆‍♀️", "l": "Facial", "img": ""}, {"e": "💄", "l": "Makeup", "img": ""}, {"e": "🧖‍♀️", "l": "Spa", "img": ""}], "items": [{"n": "Braids", "d": "Knotless, box, or cornrows", "p": 5000}, {"n": "Wig installation", "d": "Includes styling", "p": 8000}, {"n": "Gel nails", "d": "Full set", "p": 3500}, {"n": "Facial treatment", "d": "Deep cleanse", "p": 6000}, {"n": "Bridal makeup", "d": "Includes trial", "p": 10000}, {"n": "Barber cut", "d": "Clean fade or trim", "p": 2000}], "rev": [{"t": "My braids lasted weeks and the booking was so easy.", "w": "Ngozi"}, {"t": "Friendly team and spotless salon.", "w": "Blessing"}]}, {"id": "electrician", "label": "Electrician", "icon": "⚡", "c1": "#d97706", "c2": "#ea580c", "name": "BrightSpark Electric", "head": "Safe wiring. Fast repairs.", "tag": "Certified electrical work for homes and shops. Same-day service.", "cta": "Request Service", "gname": "Our work", "mname": "Services and prices", "list": "Your request", "ph": "Your address and the problem", "about": "We install, repair, and maintain electrical systems safely, from a single socket to a full building.", "hours": "Open Mon to Sat 7am to 7pm, emergencies any time.", "phone": "2347066949022", "hero": "", "gal": [{"e": "💡", "l": "Lighting", "img": ""}, {"e": "🔌", "l": "Sockets", "img": ""}, {"e": "⚡", "l": "Fault repairs", "img": ""}, {"e": "☀️", "l": "Solar", "img": ""}, {"e": "🔋", "l": "Inverters", "img": ""}, {"e": "🏠", "l": "House wiring", "img": ""}], "items": [{"n": "House wiring", "d": "Per room, from", "p": 15000}, {"n": "Fault repair", "d": "Call-out and fix", "p": 5000}, {"n": "Lights and sockets", "d": "Installation", "p": 3000}, {"n": "Solar installation", "d": "Panels and battery", "p": 50000}, {"n": "Inverter setup", "d": "Supply and fit", "p": 20000}, {"n": "CCTV installation", "d": "4 cameras", "p": 25000}], "rev": [{"t": "He found the fault in minutes and fixed it the same day.", "w": "Mr Okoro"}, {"t": "Neat wiring and fair price.", "w": "Mrs Adeyemi"}]}, {"id": "plumber", "label": "Plumber", "icon": "🚰", "c1": "#0369a1", "c2": "#06b6d4", "name": "FlowFix Plumbing", "head": "Leaks fixed today.", "tag": "Honest quotes and fast repairs for homes and businesses.", "cta": "Get a Quote", "gname": "Our work", "mname": "Services and prices", "list": "Your request", "ph": "Your address and the problem", "about": "From a dripping tap to a full bathroom fit-out, we do the job right the first time and clean up after.", "hours": "Open Mon to Sat 7am to 7pm, emergencies any time.", "phone": "2347066949022", "hero": "", "gal": [{"e": "🚰", "l": "Leaks", "img": ""}, {"e": "🛁", "l": "Bathrooms", "img": ""}, {"e": "🚽", "l": "Toilets", "img": ""}, {"e": "🔧", "l": "Pipe fitting", "img": ""}, {"e": "🏠", "l": "Tanks", "img": ""}, {"e": "🚿", "l": "Showers", "img": ""}], "items": [{"n": "Leak repair", "d": "Pipes, taps, joints", "p": 5000}, {"n": "Pipe fitting", "d": "Per point, from", "p": 12000}, {"n": "Tank installation", "d": "Overhead or underground", "p": 25000}, {"n": "Toilet repair", "d": "Cistern and bowl", "p": 6000}, {"n": "Borehole plumbing", "d": "Pump and piping", "p": 30000}, {"n": "Drain unblocking", "d": "Kitchen or bathroom", "p": 7000}], "rev": [{"t": "Came within the hour and stopped the leak.", "w": "Chinedu"}, {"t": "Honest price, no surprises.", "w": "Mama Joy"}]}, {"id": "housekeeper", "label": "Housekeeper", "icon": "🧹", "c1": "#059669", "c2": "#14b8a6", "name": "SparkHome Cleaning", "head": "A spotless home, every time.", "tag": "Trusted, vetted cleaners for busy families and offices.", "cta": "Book a Clean", "gname": "Our work", "mname": "Services and prices", "list": "Your booking", "ph": "Address, rooms, and preferred day", "about": "Our cleaners are trained, background-checked, and bring their own supplies. Weekly, monthly, or one-off.", "hours": "Open Mon to Sun 7am to 6pm.", "phone": "2347066949022", "hero": "", "gal": [{"e": "🧹", "l": "Home cleaning", "img": ""}, {"e": "🧽", "l": "Deep clean", "img": ""}, {"e": "👕", "l": "Laundry", "img": ""}, {"e": "🍳", "l": "Kitchen", "img": ""}, {"e": "🛏️", "l": "Bedrooms", "img": ""}, {"e": "🪟", "l": "Windows", "img": ""}], "items": [{"n": "Home cleaning", "d": "Up to 3 bedrooms", "p": 10000}, {"n": "Deep cleaning", "d": "Kitchen, bath, floors", "p": 20000}, {"n": "Laundry and ironing", "d": "Pickup and delivery", "p": 6000}, {"n": "Window cleaning", "d": "Inside and out", "p": 8000}, {"n": "Post-party cleanup", "d": "Same day", "p": 15000}, {"n": "Monthly plan", "d": "4 visits", "p": 35000}], "rev": [{"t": "My house has never been this clean.", "w": "Folake"}, {"t": "Reliable and respectful team.", "w": "Ibrahim"}]}, {"id": "school", "label": "School", "icon": "🏫", "c1": "#1d4ed8", "c2": "#0ea5e9", "name": "Bright Future Academy", "head": "Where every child shines.", "tag": "Nursery, primary, and secondary education with caring teachers.", "cta": "Apply Now", "gname": "Campus life", "mname": "Fees and services", "list": "Your application", "ph": "Child's name, class, and parent phone", "about": "We combine strong academics, good character, and sports in a safe, friendly school environment.", "hours": "Office hours Mon to Fri 8am to 4pm.", "phone": "2347066949022", "hero": "", "gal": [{"e": "🏫", "l": "Campus", "img": ""}, {"e": "📚", "l": "Library", "img": ""}, {"e": "🔬", "l": "Science lab", "img": ""}, {"e": "⚽", "l": "Sports", "img": ""}, {"e": "🎨", "l": "Art class", "img": ""}, {"e": "🚌", "l": "School bus", "img": ""}], "items": [{"n": "Admission form", "d": "One-time fee", "p": 5000}, {"n": "Nursery tuition", "d": "Per term", "p": 80000}, {"n": "Primary tuition", "d": "Per term", "p": 100000}, {"n": "Secondary tuition", "d": "Per term", "p": 150000}, {"n": "Extra lessons", "d": "Per term", "p": 20000}, {"n": "School bus", "d": "Per term", "p": 30000}], "rev": [{"t": "My daughter loves going to school every day.", "w": "Mrs Eze"}, {"t": "Teachers truly care about the pupils.", "w": "Mr Bello"}]}, {"id": "events", "label": "Event Planner", "icon": "🎉", "c1": "#7c3aed", "c2": "#f43f5e", "name": "Moments Events", "head": "Your event, perfectly planned.", "tag": "Weddings, birthdays, and corporate events from start to finish.", "cta": "Plan My Event", "gname": "Our events", "mname": "Packages and prices", "list": "Your enquiry", "ph": "Event date, place, and guest count", "about": "We handle planning, decoration, catering, and photography so you can enjoy your big day.", "hours": "Open Mon to Sat 9am to 6pm. By appointment.", "phone": "2347066949022", "hero": "", "gal": [{"e": "💒", "l": "Weddings", "img": ""}, {"e": "🎂", "l": "Birthdays", "img": ""}, {"e": "🎤", "l": "Corporate", "img": ""}, {"e": "🎈", "l": "Decor", "img": ""}, {"e": "📸", "l": "Photography", "img": ""}, {"e": "🍽️", "l": "Catering", "img": ""}], "items": [{"n": "Wedding planning", "d": "Full service, from", "p": 150000}, {"n": "Birthday party", "d": "Kids or adults", "p": 50000}, {"n": "Corporate event", "d": "Launch or dinner", "p": 200000}, {"n": "Decoration", "d": "Hall and stage", "p": 40000}, {"n": "Photography", "d": "Full day", "p": 60000}, {"n": "Catering", "d": "50 guests", "p": 120000}], "rev": [{"t": "They made our wedding stress-free and beautiful.", "w": "Ada and Seun"}, {"t": "Professional from start to finish.", "w": "Femi"}]}, {"id": "boutique", "label": "Boutique", "icon": "👗", "c1": "#be185d", "c2": "#7c3aed", "name": "Velvet Boutique", "head": "Dress the way you feel.", "tag": "New arrivals every week. Order on WhatsApp and get delivery.", "cta": "Shop Now", "gname": "New arrivals", "mname": "Products and prices", "list": "Your order", "ph": "Size, colour, and delivery address", "about": "We stock stylish, affordable fashion for women and men, from everyday wear to owambe outfits.", "hours": "Open Mon to Sat 10am to 8pm.", "phone": "2347066949022", "hero": "", "gal": [{"e": "👗", "l": "Dresses", "img": ""}, {"e": "👠", "l": "Shoes", "img": ""}, {"e": "👜", "l": "Bags", "img": ""}, {"e": "🧣", "l": "Accessories", "img": ""}, {"e": "👔", "l": "Menswear", "img": ""}, {"e": "💍", "l": "Jewellery", "img": ""}], "items": [{"n": "Owambe dress", "d": "Lace or ankara", "p": 12000}, {"n": "Heels", "d": "Sizes 36 to 42", "p": 9000}, {"n": "Handbag", "d": "Leather look", "p": 7500}, {"n": "Ankara set", "d": "Top and skirt", "p": 15000}, {"n": "Jewellery set", "d": "Necklace and earrings", "p": 5000}, {"n": "Men's shirt", "d": "Cotton or linen", "p": 8000}], "rev": [{"t": "Lovely outfits and quick delivery.", "w": "Chioma"}, {"t": "Great quality for the price.", "w": "Yusuf"}]}]}</script>
+<script>
+(function () {
+  var KEY = "ebv-demos-v1";
+  var $ = function (s) { return document.querySelector(s); };
+  function el(t, p, k) {
+    var e = document.createElement(t);
+    for (var a in (p || {})) {
+      if (a === "text") e.textContent = p[a];
+      else if (a === "on") for (var v in p.on) e.addEventListener(v, p.on[v]);
+      else e.setAttribute(a, p[a]);
+    }
+    (k || []).forEach(function (c) { e.appendChild(c); });
+    return e;
+  }
+  var DEF = JSON.parse($("#site-data").textContent), data = JSON.parse(JSON.stringify(DEF));
+  try { var sv = JSON.parse(localStorage.getItem(KEY) || "null"); if (sv && sv.updated > (DEF.updated || 0)) data = sv; } catch (e) {}
+  var authed = false, an = 0, cur = null, carts = {};
+  var money = function (x) { return "\u20a6" + Number(x || 0).toLocaleString("en-NG"); };
+  var wa = function (num, t) { return "https://wa.me/" + num + "?text=" + encodeURIComponent(t); };
+  function status(m) { var s = $("#st"); if (s) s.textContent = m; }
+  function save() {
+    data.updated = Date.now();
+    try { localStorage.setItem(KEY, JSON.stringify(data)); status("Saved on this phone. Tap Download updated website to publish."); }
+    catch (e) { status("Storage is full. Tap Download updated website to keep your changes."); }
+  }
+  function find(id) { return data.niches.filter(function (n) { return n.id === id; })[0]; }
+  function openLb(src) { $("#lb img").src = src; $("#lb").hidden = false; }
+  $("#lb").addEventListener("click", function () { this.hidden = true; });
+
+  function buildHub() {
+    var H = $("#hub"); H.textContent = "";
+    var o = data.owner;
+    H.appendChild(el("div", { "class": "top" }, [el("b", { text: "Ebene-Vento Technology" }),
+      el("a", { "class": "btn sm", href: wa(o.whatsapp, "Hello, I want a website for my business."), target: "_blank", rel: "noopener", text: "WhatsApp us" })]));
+    H.appendChild(el("div", { "class": "wrap hub" }, [
+      el("h1", { text: "A real website for every local business." }),
+      el("p", { text: "Open a demo below. Each one has photos, prices, and an order or booking button that sends the customer straight to WhatsApp. These are sample designs, and your own photos and prices replace them." }),
+      el("div", { "class": "cards" }, data.niches.map(function (n, i) {
+        return el("a", { "class": "dc", href: "#" + n.id }, [
+          el("div", { "class": "tile", style: "background:linear-gradient(" + (135 + i * 25) + "deg," + n.c1 + "," + n.c2 + ")", text: n.icon }),
+          el("div", { "class": "t" }, [el("h3", { text: n.label }), el("small", { text: n.name }), el("br"), el("em", { text: "Open demo" })])]);
+      })),
+      el("h2", { text: "Want one for your business?" }),
+      el("p", { text: "Engr Ebenezer Bassey, Ebene-Vento Technology. Fast replies, fair prices, on-time delivery." }),
+      el("div", { "class": "row" }, [
+        el("a", { "class": "btn", href: wa(o.whatsapp, "Hello, I want a website for my business."), target: "_blank", rel: "noopener", text: "Chat on WhatsApp" }),
+        el("a", { "class": "btn alt", href: "mailto:" + o.email, text: "Send an email" }),
+        el("a", { "class": "btn alt", href: "tel:+" + o.whatsapp, text: "Call us" })]),
+      el("p", { "class": "ft" }, [el("a", { href: "#admin", id: "admLink", text: "Admin login", on: { click: function (e) { e.preventDefault(); openAdmin(); } } })])
+    ]));
+  }
+
+  function buildSite(n) {
+    var S = $("#site"); S.textContent = "";
+    S.style.setProperty("--c1", n.c1); S.style.setProperty("--c2", n.c2);
+    var cart = carts[n.id] = carts[n.id] || {}, qs = [];
+    var sum = el("div", { "class": "sum" }), tot = el("div", { "class": "tot" });
+    function refresh() {
+      var c = 0, t = 0, lines = [];
+      n.items.forEach(function (it, i) { var q = cart[i] || 0; if (qs[i]) qs[i].textContent = q; if (q) { c += q; t += q * it.p; lines.push(q + " x " + it.n + " (" + money(q * it.p) + ")"); } });
+      sum.textContent = lines.length ? lines.join("\n") : "Nothing added yet. Tap + on an item above.";
+      tot.textContent = "Total: " + money(t);
+      var pl = $("#pill"); pl.hidden = !c; pl.textContent = n.list + ": " + c + " item" + (c > 1 ? "s" : "") + " \u00b7 " + money(t);
+      pl.style.background = n.c1; return { c: c, t: t, lines: lines };
+    }
+    function chg(i, d) { cart[i] = Math.max(0, (cart[i] || 0) + d); refresh(); }
+    function go(id) { var e = document.getElementById(id); if (e) e.scrollIntoView({ behavior: "smooth" }); }
+    $("#pill").onclick = function () { go("s-order"); };
+
+    S.appendChild(el("div", { "class": "sbar" }, [el("a", { "class": "back", href: "#home", text: "\u2190 All demos" }), el("strong", { text: n.name }),
+      el("a", { "class": "sbtn", href: wa(data.owner.whatsapp, "Hello, I want a website like your " + n.label + " demo."), target: "_blank", rel: "noopener", text: "Get this website" })]));
+    var hero = el("section", { "class": "shero" }, [el("div", { "class": "wrap" }, [
+      el("div", { "class": "hin" }, [el("h1", { text: n.head }), el("p", { text: n.tag }), el("div", { "class": "row" }, [
+        el("button", { "class": "sb", type: "button", text: n.cta, on: { click: function () { go("s-menu"); } } }),
+        el("a", { "class": "sb alt", href: "tel:+" + n.phone, text: "Call us" })])]),
+      el("div", { "class": "hico", text: n.hero ? "" : n.icon })])]);
+    if (n.hero) hero.style.backgroundImage = "linear-gradient(rgba(10,10,30,.55),rgba(10,10,30,.55)),url(" + n.hero + ")";
+    S.appendChild(hero);
+
+    S.appendChild(el("section", { "class": "wrap sec" }, [el("h2", { text: n.gname }),
+      el("div", { "class": "gal" }, n.gal.map(function (g, i) {
+        var k = [];
+        if (g.img) k.push(el("img", { src: g.img, alt: g.l }));
+        else k.push(document.createTextNode(g.e));
+        k.push(el("span", { text: g.l }));
+        var b = el("button", { "class": "g", type: "button", "aria-label": g.l, style: g.img ? "" : "background:linear-gradient(" + (135 + i * 40) + "deg," + n.c1 + "," + n.c2 + ")" }, k);
+        if (g.img) b.addEventListener("click", function () { openLb(g.img); });
+        return b;
+      }))]));
+
+    S.appendChild(el("section", { "class": "wrap sec", id: "s-menu" }, [el("h2", { text: n.mname }),
+      el("p", { "class": "note", text: "Sample prices. Tap + to add items." })].concat(n.items.map(function (it, i) {
+        var q = el("b", { text: "0" }); qs[i] = q;
+        return el("div", { "class": "item" }, [el("div", { "class": "i" }, [el("b", { text: it.n }), el("small", { text: it.d })]), el("span", { "class": "pr", text: money(it.p) }),
+          el("div", { "class": "step" }, [el("button", { type: "button", "aria-label": "Remove one " + it.n, text: "\u2212", on: { click: function () { chg(i, -1); } } }), q,
+            el("button", { type: "button", "aria-label": "Add one " + it.n, text: "+", on: { click: function () { chg(i, 1); } } })])]);
+      }))));
+
+    var nm = el("input", { type: "text", autocomplete: "name", placeholder: "Your name" }), note = el("textarea", { rows: "2", placeholder: n.ph });
+    var st = el("p", { "class": "note", role: "status" });
+    S.appendChild(el("section", { "class": "wrap sec", id: "s-order" }, [el("h2", { text: n.list }), el("div", { "class": "pan" }, [sum, tot,
+      el("label", { text: "Your name" }), nm, el("label", { text: "Notes (optional)" }), note,
+      el("button", { "class": "wb", type: "button", text: "Send on WhatsApp", on: { click: function () {
+        var r = refresh(); if (!r.c) { st.textContent = "Please add at least one item first."; return; }
+        if (!nm.value.trim()) { st.textContent = "Please type your name."; nm.focus(); return; }
+        st.textContent = "";
+        var msg = "Hello " + n.name + ", I would like to place this " + n.list.toLowerCase() + ":\n" + r.lines.join("\n") + "\nTotal: " + money(r.t) + "\nName: " + nm.value.trim() + (note.value.trim() ? "\nNotes: " + note.value.trim() : "");
+        window.open(wa(n.phone, msg), "_blank", "noopener");
+      } } }), st])]));
+
+    S.appendChild(el("section", { "class": "wrap sec" }, [el("h2", { text: "About us" }), el("p", { text: n.about }), el("p", { "class": "note", text: n.hours })]));
+    S.appendChild(el("section", { "class": "wrap sec" }, [el("h2", { text: "What customers say" }), el("div", { "class": "rev" }, n.rev.map(function (r) {
+      return el("div", {}, [el("div", { text: "\u2605\u2605\u2605\u2605\u2605", style: "color:#f59e0b" }), el("p", { text: "\u201c" + r.t + "\u201d" }), el("small", { text: r.w + " (sample review)" })]);
+    }))]));
+    S.appendChild(el("div", { "class": "wrap" }, [el("div", { "class": "ban" }, [el("h2", { text: "Want a website like this?", style: "color:#ffe01b" }),
+      el("p", { text: "This is a demo made by Ebene-Vento Technology. Your name, photos, and prices go in, and customers order on your WhatsApp." }),
+      el("a", { "class": "btn", href: wa(data.owner.whatsapp, "Hello, I want a website like your " + n.label + " demo."), target: "_blank", rel: "noopener", text: "Get this website" })])]));
+    refresh();
+  }
+
+  function render() {
+    var n = cur && find(cur);
+    $("#hub").hidden = !!n; $("#site").hidden = !n;
+    if (n) buildSite(n); else { buildHub(); $("#pill").hidden = true; }
+    document.title = (n ? n.name + " | Demo by " : "") + "Ebene-Vento Technology";
+    var m = "Ebene-Vento Technology \u00a0\u00a0\u2726\u00a0\u00a0 "; $("#mq").textContent = m + m + "Ebene-Vento Technology";
+  }
+  function route() { var h = location.hash.slice(1); cur = find(h) ? h : null; render(); window.scrollTo(0, 0); if (h === "admin") openAdmin(); }
+  window.addEventListener("hashchange", route);
+
+  /* ---------- Admin ---------- */
+  function pick(maxW, cb) {
+    var i = el("input", { type: "file", accept: "image/*" });
+    i.onchange = function () {
+      var f = i.files[0]; if (!f) return; var r = new FileReader();
+      r.onload = function () {
+        var im = new Image();
+        im.onload = function () {
+          var sc = Math.min(1, maxW / im.width), c = document.createElement("canvas");
+          c.width = Math.round(im.width * sc); c.height = Math.round(im.height * sc);
+          c.getContext("2d").drawImage(im, 0, 0, c.width, c.height); cb(c.toDataURL("image/jpeg", 0.8));
+        };
+        im.onerror = function () { status("That file is not a valid image."); };
+        im.src = r.result;
+      };
+      r.readAsDataURL(f);
+    };
+    i.click();
+  }
+  function field(label, val, on, multi) {
+    var inp = el(multi ? "textarea" : "input", multi ? { rows: "3" } : { type: "text" }); inp.value = val == null ? "" : val;
+    inp.addEventListener("input", function () { on(inp.value); save(); render(); });
+    return el("div", {}, [el("label", { text: label }), inp]);
+  }
+  function btn(t, cls, fn) { return el("button", { "class": "btn sm " + (cls || ""), type: "button", text: t, on: { click: fn } }); }
+  function redo() { save(); render(); editor(); }
+
+  function login() {
+    var b = $("#admBody"); b.textContent = "";
+    var pw = el("input", { type: "password", placeholder: "Admin password", autocomplete: "current-password" });
+    var go = function () { if (pw.value === data.password) { authed = true; editor(); } else status("Wrong password."); };
+    pw.addEventListener("keydown", function (e) { if (e.key === "Enter") go(); });
+    b.appendChild(el("h2", { text: "Admin login" })); b.appendChild(pw);
+    b.appendChild(el("div", { "class": "row" }, [btn("Log in", "", go), btn("Cancel", "alt", closeAdmin)])); b.appendChild(el("p", { id: "st" }));
+  }
+  function editor() {
+    var b = $("#admBody"); b.textContent = "";
+    var n = data.niches[an];
+    b.appendChild(el("h2", { text: "Edit your websites" }));
+    b.appendChild(el("div", { "class": "tip", text: "Changes save on this phone. To show them to everyone, tap Download updated website at the bottom and upload that file in place of the old index.html." }));
+    b.appendChild(el("h3", { text: "Your details" }));
+    b.appendChild(field("Your WhatsApp (234..., no + and no 0)", data.owner.whatsapp, function (v) { data.owner.whatsapp = v.replace(/\D/g, ""); }));
+    b.appendChild(field("Your email", data.owner.email, function (v) { data.owner.email = v; }));
+    b.appendChild(el("h3", { text: "Choose the business to edit" }));
+    var sel = el("select", {}, data.niches.map(function (x, i) { var o = el("option", { value: String(i), text: x.label }); if (i === an) o.selected = true; return o; }));
+    sel.addEventListener("change", function () { an = +sel.value; cur = data.niches[an].id; location.hash = "#" + cur; editor(); });
+    b.appendChild(sel);
+    b.appendChild(field("Business name", n.name, function (v) { n.name = v; }));
+    b.appendChild(field("Headline", n.head, function (v) { n.head = v; }));
+    b.appendChild(field("Short description", n.tag, function (v) { n.tag = v; }, true));
+    b.appendChild(field("Business WhatsApp (234..., no + and no 0)", n.phone, function (v) { n.phone = v.replace(/\D/g, ""); }));
+    b.appendChild(field("About text", n.about, function (v) { n.about = v; }, true));
+    var hb = el("div", { "class": "box" }, [el("label", { text: "Top banner photo" })]);
+    if (n.hero) hb.appendChild(el("img", { src: n.hero, alt: "Banner" }));
+    hb.appendChild(el("div", { "class": "row" }, [btn(n.hero ? "Replace photo" : "Upload photo", "", function () { pick(1200, function (u) { n.hero = u; redo(); }); }), n.hero ? btn("Remove", "red", function () { n.hero = ""; redo(); }) : el("span")]));
+    b.appendChild(hb);
+    b.appendChild(el("h3", { text: "Gallery photos" }));
+    n.gal.forEach(function (g) {
+      var bx = el("div", { "class": "box" });
+      if (g.img) bx.appendChild(el("img", { src: g.img, alt: g.l }));
+      bx.appendChild(el("div", { "class": "row" }, [btn(g.img ? "Replace photo" : "Upload photo", "", function () { pick(800, function (u) { g.img = u; redo(); }); }), g.img ? btn("Remove", "red", function () { g.img = ""; redo(); }) : el("span")]));
+      bx.appendChild(field("Caption", g.l, function (v) { g.l = v; }));
+      b.appendChild(bx);
+    });
+    b.appendChild(el("h3", { text: "Prices" }));
+    n.items.forEach(function (it) {
+      var bx = el("div", { "class": "box" });
+      bx.appendChild(field("Item name", it.n, function (v) { it.n = v; }));
+      bx.appendChild(field("Price in naira", it.p, function (v) { it.p = parseInt(v.replace(/\D/g, ""), 10) || 0; }));
+      b.appendChild(bx);
+    });
+    b.appendChild(el("h3", { text: "Security" }));
+    b.appendChild(field("Admin password", data.password, function (v) { data.password = v; }));
+    b.appendChild(el("p", { "class": "note", style: "color:#aab0d4", text: "This password only hides the edit screen. Do not reuse a bank or email password." }));
+    b.appendChild(el("h3", { text: "Publish" }));
+    b.appendChild(el("div", { "class": "row" }, [btn("Download updated website", "", download),
+      btn("Reset to original", "red", function () { if (confirm("Remove all your edits on this phone?")) { try { localStorage.removeItem(KEY); } catch (e) {} location.reload(); } }),
+      btn("Log out", "alt", function () { authed = false; closeAdmin(); })]));
+    b.appendChild(el("p", { id: "st" }));
+  }
+  function download() {
+    data.updated = Date.now(); save();
+    var c = document.documentElement.cloneNode(true);
+    c.querySelector("#site-data").textContent = JSON.stringify(data).replace(/</g, "\\u003c");
+    c.querySelector("#admin").hidden = true; c.querySelector("#admBody").textContent = "";
+    c.querySelector("#hub").textContent = ""; c.querySelector("#site").textContent = ""; c.querySelector("#lb").hidden = true; c.querySelector("#pill").hidden = true;
+    var blob = new Blob(["<!DOCTYPE html>\n" + c.outerHTML], { type: "text/html" });
+    var u = URL.createObjectURL(blob), a = el("a", { href: u, download: "index.html" });
+    document.body.appendChild(a); a.click(); a.remove(); setTimeout(function () { URL.revokeObjectURL(u); }, 3000);
+    status("Downloaded as index.html. Upload it to replace your live website.");
+  }
+  function openAdmin() { if (cur) an = Math.max(0, data.niches.indexOf(find(cur))); $("#admin").hidden = false; authed ? editor() : login(); }
+  function closeAdmin() { $("#admin").hidden = true; }
+  document.addEventListener("keydown", function (e) { if (e.key === "Escape") $("#lb").hidden = true; });
+
+  route();
+})();
+</script>
+</body>
+</html>
